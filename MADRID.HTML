@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BALLERS WEBSITE</title>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bayern.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </head>
+</head>
+<body>
+    <!--navbar-->
+ <nav class="navbar">
+     <div class="inner-width">
+         <button class="menu-toggler">
+             <span></span>
+             <span></span>
+             <span></span>
+         </button>
+         <div class="navbar-menu">
+            <a href="index.html">HOME</a>
+            <a href="complaint.html">CLUB'S</a>
+            <a href="services.html">STAR PLAYERS</a>
+            <a href="about.html">NEWS</a>
+            
+         </div>
+         
+         </div>
+ </nav>
+
+  <div class="w3-content w3-display-container">
+    <img class="mySlides" src="images/bale.jpg" style="width:50%">
+    <img class="mySlides" src="images/bar.webp" style="width:50%">
+    <img class="mySlides" src="images/barcaa.jpg" style="width:50%">
+    <img class="mySlides" src="images/bayern.jpg" style="width:50%">
+  
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+  
+  </body>
+  </html>

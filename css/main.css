@@ -1,0 +1,298 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+     /* web bg color */
+    background: black; 
+    
+}
+
+
+.navbar{
+    position: fixed;
+    background-color:black; /* navbar color*/
+    width: 100%;
+    padding: 50px 50px;
+    top: 0;
+    z-index: 999;
+    transition: .3s linear;
+
+}
+
+.innerwidth{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 40px;
+
+}
+
+.navbar .innerwidth{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.menu-toggler{
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
+
+.menu-toggler span{
+    display: block;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    position: relative;
+    transition: .3s linear;
+}
+
+.navbar-menu a{
+    background: transparent;
+ color:#65dbdd; /* before hover navbar text color*/
+ position: relative;
+ left: 15%;
+ font-size: 50px;
+ font-weight: 500;
+ margin-left: 30px;
+ transition: .2s linear;  
+}
+
+.navbar-menu a:hover{
+    color:  #DDA0DD !important;
+}
+
+.space{
+    border: #fc87da solid 2px;
+    border-radius: 50px;
+    padding: 70px;
+   position: relative;
+    top: 250px;
+    left: 30%;
+    font-size: 100px;
+    background: transparent; /* background */  /* dark text color */
+    display: inline-block;
+   color: transparent;
+    background-image: linear-gradient(90deg, #fc87da 0%, #cb94ef 36% , #41e0e7 70%, #28f6c2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+ /* text-shadow:
+  0.05em 0 0 #DDA0DD,
+  -0.05em -0.005em 0 #7a0b5b,
+  0.025em 0.05em 0 #28f6c2;
+
+  animation: space 1000ms infinite;
+  */
+}
+
+/*
+@keyframes space{
+    0%
+{
+    text-shadow:
+  0.05em 0 0 #DDA0DD,
+  -0.05em -0.005em 0 #7a0b5b,
+  -0.025em 0.05em 0 #28f6c2;
+
+}
+25%
+{
+    text-shadow:
+  -0.05em 0 0 #DDA0DD,
+  0.05em 0.005em 0 #7a0b5b,
+  0.025em -0.05em 0 #28f6c2;
+
+}
+75%
+{
+    text-shadow:
+  -0.05em 0 0 #DDA0DD,
+  -0.05em -0.005em 0 #7a0b5b,
+  -0.025em -0.05em 0 #28f6c2;
+
+}
+}
+*/
+.sticky{
+    background-color: black;  /* navbar hover */
+    padding: 18px 0;
+
+}
+
+.sticky .navbar-menu a{
+ color:#65dbdd;  /* scrolling color of nav-bar */
+
+}
+
+.sticky .menu-toggler span{
+    background-color: rgb(0, 0, 0);
+
+}
+
+
+#home{
+    height: 100vh;
+    min-height: 500px;
+    background:#fff;
+
+}
+
+#home .inner-width{
+display:flex;
+align-items: center;
+justify-content:center;
+height: 100%;
+text-align: center;
+}
+
+#home .content{
+    
+    width: 100%;
+    color: #fff;
+}
+
+.header {
+    font-style: normal;
+    font-size: 100px;
+    width: 100%;
+    padding: 20px;
+    background: transparent; /* grey background */  /* darkG text color */
+    display: inline-block;
+    color: transparent;
+    background-image: linear-gradient(90deg, #fc87da 0%, #cb94ef 36% , #41e0e7 70%, #28f6c2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+
+#home .content h1{
+    position: relative;
+    top: 320px;
+    font-size: 40px;
+    margin-bottom: 60px;
+    display: inline-block;
+    color: transparent;
+    background-image: linear-gradient(90deg, #fc87da 0%, #cb94ef 36% , #41e0e7 70%, #28f6c2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+
+}
+#home .content h1::after{
+    content: "To see the ball, to run after it, makes me the happiest man in the world. ― Diego Maradona";
+    animation: textanim 08s linear infinite ;
+}
+@keyframes textanim{
+    25%{
+        content: "Life is full of regrets, but it doesn't pay to look back. ― Zinedine Zidane";
+    }
+    50%{
+        content: "If you are first you are first. If you are second, you are nothing. ― Pele";
+    }
+    75%{
+        content: "The spotlight will always be on me, but it's something I'm learning to live with as the years go by. ― David Beckham";
+    }
+}
+
+.sm a{
+    position: relative;
+    top: 1050px;
+    display: inline-block;   /*color  social media logos*/
+    color: transparent;
+    background-image: linear-gradient(90deg, #fc87da 0%, #cb94ef 25% , #41e0e7 65%, #28f6c2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+    font-size: 40px;
+    margin: 0 10px;
+    transition: .2s linear;
+}
+
+.sm a:hover{
+    color: #DDA0DD;
+}
+#home .buttons{
+    margin-top: 60px;
+}
+#home .buttons a{
+    margin: 15px 30px;
+    position: relative;
+    top: 350px;
+    display: inline-block;
+    color: transparent;
+    background-image: linear-gradient(90deg, #fc87da 0%, #cb94ef 36% , #41e0e7 70%, #28f6c2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+    font-size: 22px;
+    font-weight: 500;
+    width: 180px;
+    border: 1px solid  gray;
+    padding: 14px 0;
+    border-radius: 6px;
+    transition: .2s linear;
+}
+#home .buttons a:hover,
+#home .buttons a:nth-child(2){
+    background-image: linear-gradient(90deg, #fc87da 0%, #cb94ef 36% , #41e0e7 70%, #28f6c2 100%);
+    color:#B0E0E6;
+}
+
+.new{
+    margin-left: 10%;
+    left: 20px;
+    color: #fff;
+}
+
+/* Three columns side by side */
+.column {
+    position: relative;
+    top: 300px;
+    float: left;
+    width: 33%;
+    margin-bottom: 20px;
+    padding: 100px 100px;
+    background:transparent;
+    color: #cb94ef;
+}
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 200px) {
+    .column {
+      width: 100px;
+      background: transparent;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 0;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: white;
+  }
+  
+
+.score{
+    padding: 100;
+    position:relative;
+    top: 100px;
+    left: 500px;
+}

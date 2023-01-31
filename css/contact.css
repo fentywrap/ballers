@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color:#fff ;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    position: fixed;
+    background-color:transparent;
+    width: 100%;
+    padding: 3px 0;
+    top: 0;
+    z-index: 999;
+    transition: .3s linear;
+
+}
+
+.innerwidth{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 40px;
+
+}
+
+.navbar .innerwidth{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.menu-toggler{
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+   display: none;
+}
+
+.menu-toggler span{
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    position: relative;
+    transition: .3s linear;
+}
+
+.navbar-menu a{
+ color:#fff;
+ font-size: 30px;
+ font-weight: 500;
+ margin-left: 30px;
+ transition: .2s linear;  
+}
+
+.navbar-menu a:hover{
+    color:  #fff23eea !important;
+}
+
+.sticky{
+    background-color: #fff;
+    padding: 18px 0;
+
+}
+
+.sticky .navbar-menu a{
+    color: #111;
+}
+
+.sticky .menu-toggler span{
+    background-color: #111;
+
+}
+
+.sm a{
+    color:rgb(255, 255, 255);
+    font-size: 44px;
+    margin: 0 10px;
+    transition: .2s linear;
+}
+
+.sm a:hover{
+    color: #fff23eea;
+}
+
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 100px 8px;
+    background: url(../images/black.jpg) no-repeat center;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(97, 84, 84, 0.911);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 18px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 80px;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
